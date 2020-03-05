@@ -15,8 +15,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
-
-
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -27,9 +25,7 @@ class MainActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
          return when (item.itemId) {
             R.id.action_settings -> {
-
-                 var intent = Intent(this,Dynamic::class.java)
-                 startActivity(intent)
+                 startActivity(Intent(this,Dynamic::class.java))
                 return true
             }
             else -> super.onOptionsItemSelected(item)
