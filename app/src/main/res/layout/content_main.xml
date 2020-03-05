@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:baselineAligned="false"
+        android:padding="@dimen/dp2">
+
+        <fragment
+            android:id="@+id/frag_static_left"
+            android:name="com.tech.developer.FragmentStaticLeft"
+            android:layout_width="@dimen/dp0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginEnd="@dimen/dp1"
+            tools:layout="@layout/fragment_static_left"/>
+
+
+        <fragment
+            android:id="@+id/frag_static_right"
+            android:name="com.tech.developer.FragmentStaticRight"
+            android:layout_width="@dimen/dp0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/dp1"
+            tools:layout="@layout/fragment_static_right" />
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

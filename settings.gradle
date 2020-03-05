@@ -1,0 +1,2 @@
+rootProject.name='FragmentKolin'
+include ':app'
